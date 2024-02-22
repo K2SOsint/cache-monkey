@@ -151,9 +151,9 @@ export default {
       let userDir = Path.join(os.homedir())
         .split("\\")
         .join("/");
-      let directory = `${userDir}/AppData/Roaming/discord/Cache`;
+      let directory = `${userDir}/AppData/Roaming/discord/Cache/Cache_Data`;
       if (os.platform() === "darwin") {
-        directory = `${userDir}/Library/Application Support/discord/Cache`;
+        directory = `${userDir}/Library/Application Support/discord/Cache/Cache_Data`;
       }
       if (os.platform() === 'linux') {
         directory = `${userDir}/.config/discord/Cache`
